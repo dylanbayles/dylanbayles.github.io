@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.96.0" />
+
+
+<title>Super Bowls Are Not the Ultimate Metric For Denver - Dylan Bayles&#39; Github Site</title>
+<meta property="og:title" content="Super Bowls Are Not the Ultimate Metric For Denver - Dylan Bayles&#39; Github Site">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Super Bowls Are Not the Ultimate Metric For Denver</h1>
+
+    
+    <span class="article-date">2022-04-01</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>The Denver Broncos have three Super Bowls, but one of the most prolific offenses in the 2013 team came up short in the playoffs. Which of these teams is the best Broncos team since the 1990 season?</p>
+<pre class="r"><code>ggplot() + 
+  geom_point(data=seasons, aes(x=OSRS, y=DSRS), color = &quot;grey&quot;) + 
+  geom_point(data = best, aes(x=OSRS, y=DSRS), color = &quot;orange&quot;) +
+  geom_point(data = others, aes(x=OSRS, y=DSRS), color = &quot;blue&quot;) +
+  geom_vline(data=seasons, mapping=aes(xintercept=1.66875), color=&quot;black&quot;) + 
+  geom_hline(data=seasons, mapping=aes(yintercept = 0.490625), color = &quot;black&quot;) +
+  geom_text_repel(data = best, aes(x=OSRS, y = DSRS, label = Year)) +
+  geom_text_repel(data = others, aes(x=OSRS, y = DSRS, label = Year)) +
+  geom_text(aes(x = -3, y = -6, label = &quot;Bad offense, bad defense&quot;), size = 3) + 
+  geom_text(aes(x = 11, y = 5, label = &quot;Good offense, good defense&quot;), size = 3) + labs(
+    x=&quot;Offense Simple Rating&quot;, 
+    y=&quot;Defense Simple Rating&quot;, 
+    title=&quot;You need more than just offense to win games&quot;, 
+    subtitle=&quot;The 1997 team was the only super bowl team to have both an above average offensive and defensive rating&quot;, 
+    caption=&quot;Source: Pro Football Reference | By Dylan Bayles&quot;
+    ) +
+  theme_minimal() + 
+  theme(
+    plot.title = element_text(size = 20, face = &quot;bold&quot;),
+    axis.title = element_text(size = 8), 
+    plot.subtitle = element_text(size=10), 
+    panel.grid.minor = element_blank(),
+    plot.title.position = &quot;plot&quot;
+    ) </code></pre>
+<p><img src="/2022/04/01/super-bowls-are-not-the-ultimate-metric-for-denver/index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+I would have this done by Friday dinner time, <em>whsipers = then you can go get fucking WASTED</em> and I wouldn’t blame you one bit</p>
+<p>Your assignment will be to go to ratemyprofessor.com… I’m just kidding, but do what your heart desires</p>
+<p>On dead week we’ll finish wednesday, so we won’t have class Friday - You’re given another opportunity to go to ratemyprofessor.com</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Dylan Bayles&#39; Github Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Super Bowls Are Not the Ultimate Metric For Denver</title>
+      <link>/2022/04/01/super-bowls-are-not-the-ultimate-metric-for-denver/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/01/super-bowls-are-not-the-ultimate-metric-for-denver/</guid>
+      <description>The Denver Broncos have three Super Bowls, but one of the most prolific offenses in the 2013 team came up short in the playoffs. Which of these teams is the best Broncos team since the 1990 season?
+ggplot() + geom_point(data=seasons, aes(x=OSRS, y=DSRS), color = &amp;quot;grey&amp;quot;) + geom_point(data = best, aes(x=OSRS, y=DSRS), color = &amp;quot;orange&amp;quot;) +geom_point(data = others, aes(x=OSRS, y=DSRS), color = &amp;quot;blue&amp;quot;) +geom_vline(data=seasons, mapping=aes(xintercept=1.66875), color=&amp;quot;black&amp;quot;) + geom_hline(data=seasons, mapping=aes(yintercept = 0.</description>
+    </item>
+    
     <item>
       <title>What is the best Denver Broncos team since 1990?</title>
       <link>/2022/03/30/what-is-the-best-denver-broncos-team-since-1990/</link>
