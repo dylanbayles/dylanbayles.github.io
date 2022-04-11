@@ -72,14 +72,14 @@
 
 <p>The Denver Broncos have been consistently bad over the last six seasons, ever since hall of game quarterback and the undisputed GOAT Peyton Manning retired. However, they are a highly decorated team, having won three Super Bowls (tied for 7th most) and having appeared in eight of the big games (tied for 3rd most). Many argue as to whether Manning or John Elway was the best Broncos quarterback of all time, but I’m more interested in which team was the best.</p>
 <p>They won the Super Bowl in 1997, 1998, and 2015, but the 2013 team had a dominant offense that shattered single-season records, however they fell short to the Seattle Seahawks in Super Bowl XLVIII. Or is there potentially another dark horse team that never reached the same level of success as these teams? Let’s find out. For the sake of simplicity, we’re going to focus only on Denver Broncos teams from last season dating back to 1990.</p>
-<p>First we need to look at the offense for each of these teams in the context of the times. How did they compare to the other offenses in the league during the year they played?</p>
-<p>To do this, I created a z-score for several statistics within each Denver team. I compared the total yards, total points, turnovers lost, yards per play, and total touchdowns. I then added all of the z-scores up to get a total offensive z-score, showing which teams were better than other teams in their respective years at gaining yards, scoring touchdowns, and not giving up the football.</p>
-<div id="qifnudposv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<p>First we need to look at the offense for each of these teams in the context of the times. How did they compare to the other offenses in the league during the year they played? A z-score is a statistical measure of the distance from the mean that allows us to accomplish this.</p>
+<p>I created a z-score for several offensive statistics within each Denver team. I compared the total yards, total points, turnovers lost, yards per play, and total touchdowns. I then added all of the z-scores up to get a total offensive z-score, showing which teams were better than other teams in their respective years at gaining yards, scoring touchdowns, and not giving up the football.</p>
+<div id="qeglmdgnps" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#qifnudposv .gt_table {
+#qeglmdgnps .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -104,7 +104,7 @@
   border-left-color: #D3D3D3;
 }
 
-#qifnudposv .gt_heading {
+#qeglmdgnps .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -116,7 +116,7 @@
   border-right-color: #D3D3D3;
 }
 
-#qifnudposv .gt_title {
+#qeglmdgnps .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -128,7 +128,7 @@
   border-bottom-width: 0;
 }
 
-#qifnudposv .gt_subtitle {
+#qeglmdgnps .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -140,13 +140,13 @@
   border-top-width: 0;
 }
 
-#qifnudposv .gt_bottom_border {
+#qeglmdgnps .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qifnudposv .gt_col_headings {
+#qeglmdgnps .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -161,7 +161,7 @@
   border-right-color: #D3D3D3;
 }
 
-#qifnudposv .gt_col_heading {
+#qeglmdgnps .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -181,7 +181,7 @@
   overflow-x: hidden;
 }
 
-#qifnudposv .gt_column_spanner_outer {
+#qeglmdgnps .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -193,15 +193,15 @@
   padding-right: 4px;
 }
 
-#qifnudposv .gt_column_spanner_outer:first-child {
+#qeglmdgnps .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qifnudposv .gt_column_spanner_outer:last-child {
+#qeglmdgnps .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qifnudposv .gt_column_spanner {
+#qeglmdgnps .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -213,7 +213,7 @@
   width: 100%;
 }
 
-#qifnudposv .gt_group_heading {
+#qeglmdgnps .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -238,7 +238,7 @@
   vertical-align: middle;
 }
 
-#qifnudposv .gt_empty_group_heading {
+#qeglmdgnps .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -253,15 +253,15 @@
   vertical-align: middle;
 }
 
-#qifnudposv .gt_from_md > :first-child {
+#qeglmdgnps .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qifnudposv .gt_from_md > :last-child {
+#qeglmdgnps .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qifnudposv .gt_row {
+#qeglmdgnps .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -280,7 +280,7 @@
   overflow-x: hidden;
 }
 
-#qifnudposv .gt_stub {
+#qeglmdgnps .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -293,7 +293,7 @@
   padding-right: 5px;
 }
 
-#qifnudposv .gt_stub_row_group {
+#qeglmdgnps .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -307,11 +307,11 @@
   vertical-align: top;
 }
 
-#qifnudposv .gt_row_group_first td {
+#qeglmdgnps .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qifnudposv .gt_summary_row {
+#qeglmdgnps .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -321,16 +321,16 @@
   padding-right: 5px;
 }
 
-#qifnudposv .gt_first_summary_row {
+#qeglmdgnps .gt_first_summary_row {
   border-top-style: none;
   border-top-color: #D3D3D3;
 }
 
-#qifnudposv .gt_first_summary_row.thick {
+#qeglmdgnps .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qifnudposv .gt_last_summary_row {
+#qeglmdgnps .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -340,7 +340,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#qifnudposv .gt_grand_summary_row {
+#qeglmdgnps .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -350,7 +350,7 @@
   padding-right: 5px;
 }
 
-#qifnudposv .gt_first_grand_summary_row {
+#qeglmdgnps .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -360,11 +360,11 @@
   border-top-color: #D3D3D3;
 }
 
-#qifnudposv .gt_striped {
+#qeglmdgnps .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qifnudposv .gt_table_body {
+#qeglmdgnps .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -373,7 +373,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#qifnudposv .gt_footnotes {
+#qeglmdgnps .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -387,7 +387,7 @@
   border-right-color: #D3D3D3;
 }
 
-#qifnudposv .gt_footnote {
+#qeglmdgnps .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -396,7 +396,7 @@
   padding-right: 5px;
 }
 
-#qifnudposv .gt_sourcenotes {
+#qeglmdgnps .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -410,7 +410,7 @@
   border-right-color: #D3D3D3;
 }
 
-#qifnudposv .gt_sourcenote {
+#qeglmdgnps .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -418,60 +418,60 @@
   padding-right: 5px;
 }
 
-#qifnudposv .gt_left {
+#qeglmdgnps .gt_left {
   text-align: left;
 }
 
-#qifnudposv .gt_center {
+#qeglmdgnps .gt_center {
   text-align: center;
 }
 
-#qifnudposv .gt_right {
+#qeglmdgnps .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qifnudposv .gt_font_normal {
+#qeglmdgnps .gt_font_normal {
   font-weight: normal;
 }
 
-#qifnudposv .gt_font_bold {
+#qeglmdgnps .gt_font_bold {
   font-weight: bold;
 }
 
-#qifnudposv .gt_font_italic {
+#qeglmdgnps .gt_font_italic {
   font-style: italic;
 }
 
-#qifnudposv .gt_super {
+#qeglmdgnps .gt_super {
   font-size: 65%;
 }
 
-#qifnudposv .gt_footnote_marks {
+#qeglmdgnps .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#qifnudposv .gt_asterisk {
+#qeglmdgnps .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qifnudposv .gt_slash_mark {
+#qeglmdgnps .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#qifnudposv .gt_fraction_numerator {
+#qeglmdgnps .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#qifnudposv .gt_fraction_denominator {
+#qeglmdgnps .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
